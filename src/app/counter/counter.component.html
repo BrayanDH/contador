@@ -1,0 +1,14 @@
+<app-navbar></app-navbar>
+
+<h1 style="color: white">Contador: {{ counter }}</h1>
+
+<hr />
+
+<app-button-add
+  [counter]="counter"
+  (addNumber)="handleCounterChange($event)"
+></app-button-add>
+<app-button-remove
+  [counter]="counter"
+  (removeNumber)="handleCounterChange($event)"
+></app-button-remove>
